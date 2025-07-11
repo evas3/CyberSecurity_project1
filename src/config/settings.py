@@ -25,7 +25,6 @@ SECRET_KEY = '_#h3^7@u)4ry6p@q_%uh%0tdah_47*k0it0pobh%p-c_2b=u0n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ALLOWED_HOSTS = []
-SECURE_SSL_REDIRECT = False
 
 # Debug mode turned off for fixing flaw 3
 #DEBUG = False
@@ -37,7 +36,7 @@ SECURE_SSL_REDIRECT = False
 
 # For fixing flaws 4 and 5 axios needs to be added
 INSTALLED_APPS = [
-    'axes',
+    #'axes',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -107,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # For fixing identification and security logging failures axios has to be configured
-
+"""
 AUTHENTICATION_BACKENDS = [
     'axes.backends.AxesStandaloneBackend',
     'django.contrib.auth.backends.ModelBackend',
@@ -119,7 +118,7 @@ AXES_COOLOFF_TIME = 1
 AXES_LOCKOUT_TEMPLATE = 'account_locked.html'
 AXES_LOCKOUT_PARAMETERS = ['username', 'ip_address']
 AXES_RESET_ON_SUCCESS = True
-
+"""
 
 
 # Internationalization

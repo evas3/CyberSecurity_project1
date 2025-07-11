@@ -14,7 +14,7 @@ def logIn(request):
 		username = request.POST.get('username')
 		password = request.POST.get('password')
 
-		# Fix 2
+		# Fix 2, 4 and 5
 		"""
 		login_user = authenticate(request, username=username, password=password)
 		if login_user is not None:
